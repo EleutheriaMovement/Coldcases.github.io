@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  
+</head>
+  
+  
+<body>
+<script>
+function countDown(secs,elem) {
+	var element = document.getElementById(elem);
+	element.innerHTML = "Please wait for "+secs+" seconds";
+	if(secs < 1) {
+		clearTimeout(timer);
+		element.innerHTML = '<h2 style="text-align: center">Countdown Complete!</h2>';
+		element.innerHTML += '<a href="email.html"><img src="img/email.png" height="250" width="250"></a>';
+	}
+	secs--;
+	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
+}
+</script>
+  
+  <h2 style="text-align: center"> You are on low profile!</h2>
+  <h3 style="text-align: center">Once the period is complete, you will be contacted to proceed with the case.</h3>
+<div id="status" style="text-align: center"></div>
+<script>countDown(10,"status");</script>
+    
+  </body>
+  </html>
+</body>
+</html>
