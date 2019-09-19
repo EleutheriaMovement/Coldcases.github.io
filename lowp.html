@@ -21,7 +21,7 @@ function countDown(secs,elem) {
 	element.innerHTML = "Please wait for "+secs+" seconds";
 	if(secs < 1) {
 		clearTimeout(timer);
-		element.innerHTML = '<h2 style="text-align: center">Countdown Complete!</h2>';
+		element.innerHTML = '<h2 style="text-align: center">You have a new e-mail!</h2>';
 		element.innerHTML += '<a href="email.html"><img src="img/email.png" height="250" width="250"></a>';
 	}
 	secs--;
@@ -32,7 +32,7 @@ function countDown(secs,elem) {
   <h2 style="text-align: center"> You are on low profile!</h2>
   <h3 style="text-align: center">Once the period is complete, you will be contacted to proceed with the case.</h3>
 <div id="status" style="text-align: center"></div>
-<script>countDown(10,"status");</script>
+<script>countDown(15,"status");</script>
     
   </body>
   </html>
