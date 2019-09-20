@@ -23,6 +23,7 @@ function countDown(secs,elem) {
 		clearTimeout(timer);
 		element.innerHTML = '<h2 style="text-align: center">You have a new e-mail!</h2>';
 		element.innerHTML += '<a href="email.html"><img src="img/email.png" height="250" width="250"></a>';
+		element.innerHTML += '<source src="sfx/email.wav">';
 	}
 	secs--;
 	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
