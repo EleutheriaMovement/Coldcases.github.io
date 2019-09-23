@@ -204,7 +204,7 @@ img {
 
 .menubutton { margin-left:16px; } 
 
-.dialogleft, .dialogright { display:inline-block; color:#226622; text-align:left; padding:24px; background:background:rgba(255,255,0,0.2); border-radius:8px; }
+.dialogleft, .dialogright { display:inline-block; color:#226622; text-align:left; padding:24px; background:yellow; border-radius:8px; }
 .dialogright { color:#333388; text-align:right; float:right; clear:both; overflow:auto; margin-right:0px; }
 .dialogright::after { background:red; height:16px; }
 
