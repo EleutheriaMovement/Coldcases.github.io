@@ -5,6 +5,7 @@ body {
 	height:100%;
 	background:#886644;
 	background-image:url(img/crime.jpg);
+	background-repeat: no-repeat;
 	overflow:hidden;
 }
 
