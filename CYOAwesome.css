@@ -208,13 +208,13 @@ img {
 .dialogright { color:#333388; text-align:right; float:right; clear:both; overflow:auto; margin-right:0px; }
 .dialogright::after { background:red; height:16px; }
 
-#current_choices a, .choice { display:inline-block; margin:0; padding:0; text-align:center; width:50%; padding-top:24px; padding-bottom:24px; text-decoration:none; color:red; }
+#current_choices a, .choice { display:inline-block; margin:0; padding:0; text-align:center; width:50%; padding-top:24px; padding-bottom:24px; text-decoration:none; color:white; }
 #current_choices a:hover, .choice:hover { color:blue; background:rgba(255,255,0,0.5); }
 
 #current_choices { 
 	display:none;
 	margin:0px; padding:0px; 
-	background:rgba(255,255,0,0.2);
+	background:rgba(0,0,255,0.3);
 	display:block;
 	width:100%;
 	max-width:960px;
