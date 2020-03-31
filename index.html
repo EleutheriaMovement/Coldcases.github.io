@@ -1,0 +1,414 @@
+-<!doctype html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148690243-1"></script>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148690243-1');
+</script>
+	<meta charset="utf-8">
+	<title>Covid-19</title>
+	<meta name="description" content="Find out if you are at high risk to be infected by the Covid-19">
+	<meta name="author" content="Sibusiso Mkhwanazi">
+	<meta property="og:image" content="https://eleutheriamovement.github.io/Coldcases.github.io/img/Watson2.jpeg">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<link rel="stylesheet" href="CYOAwesome.css">
+	<link rel="stylesheet" href="libs/animate.css">
+	<script src="libs/howler.core.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148690243-1"></script>
+</head>
+<body>
+<div><id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=680738139095849&autoLogAppEvents=1"></script>
+
+<div id='game' onclick='hurryup()'>
+	<div id='face_left'></div>
+	<div id='face_right'></div>
+	<div id='story_so_far'></div>
+	<div id='current_scene'></div>
+	<div id='choice_container'><div id='current_choices'></div></div>
+	<div id='swingmeter'>
+		<div id='swingtoolow'></div>
+		<div id='swinggoodlow'></div>
+		<div id='swingsweetlow'></div>
+		<div id='swingsweetest'></div>
+		<div id='swingsweethigh'></div>
+		<div id='swinggoodhigh'></div>
+		<div id='swingtext'>SWING METER</div>
+		<div id='swingpower'></div>
+	</div>
+</div>
+
+<textarea id="game_source">
+//"All content found on this Application, including: text, images, or other formats were created for informational purposes only. Offerings for continuing education credits are clearly identified and the appropriate target audience is identified. The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay in seeking it because of something you have read on this Applicatio
+INTRO	
+<h1>Welcome, let us survey you today!</h1>
+
+
+-<h1>Get started</h1>[WELCOME]
+
+WELCOME
+
+"Hello my name is BETTY2020ST Version 1.0, a cyber bot created to survey you based on the official information about CoronaVirus(Covid-19)." 
+
+"Today is the 31st March 2020, day 5 of Lockdown. There are 35593 tests conducted, 1326 positive cases, 31 recoveries and 3 deaths." 
+
+"what would you like to do today?"
+	
+- <h1>I want to know if I may be infected</h1> [RISK]
+- <h1>I want to survey my risk in getting sick </h1> [GENDER]
+GENDER
+"Please state your gender"
+-<h1>Male</h1> [MALE]
+-<h1>Female</h1> [FEMALE]
+
+MALE
+"It has become increasingly apparent globally that Covid-19 dicriminates by sex, with men more likely to test positive and more likely to die from the disease."
+- <h1>Continue</h1> [TRAVEL2]
+FEMALE
+"As a woman your chances of contructing the virus are less compared to men." 
+- <h1>Continue</h1> [TRAVEL]
+TRAVEL
+"Okay my sister, have you or your family member travelled outside of Africa this year?"
+- <h1>No</h1> [NOTTRAVELLED]
+- <h1>Yes</h1> [TRAVELLED]
+TRAVEL2
+"So my guy have you or your family member travelled outside of Africa this year?"
+- <h1>No</h1> [NOTTRAVELLED2]
+- <h1>Yes</h1> [TRAVELLED2]
+NOTTRAVELLED
+"There is around 10% of Local infections across the country, many who have it have either travelled or were in contact with the person who travelled, so you may be safe"
+- <h1>Continue</h1> [SMOKE]
+NOTTRAVELLED2
+"There is around 10% of Local infections across the country, many who have it have either travelled or were in contact with the person who travelled, so you may be safe"
+- <h1>Continue</h1> [SMOKE2]
+TRAVELLED
+"75% of those infected by Covid-19 have travelled to the countries in europe or Asia and almost 25% were directly in contact with them. you are a high risk, you need to declare your travel by calling this number 0800 029 999 or send "hi" on your whatsapp to 0600 123456"
+- <h1>Finish</h1> [FINISH]
+TRAVELLED2
+"My guy things are not looking good for you cause 75% of those infected by Covid-19 have travelled to the countries in europe or Asia and almost 25% were directly in contact with them. you are a high risk, you need to declare your travel by calling this number 0800 029 999 or send "hi" on your whatsapp to 0600 123456"
+- <h1>Finish</h1> [FINISH]
+SMOKE
+"Are you a smoker?"
+- <h1>No</h1> [NOTSMOKER]
+- <h1>Yes</h1> [SMOKER]
+SMOKE2
+"Are you a smoker?"
+- <h1>No</h1> [NOTSMOKER2]
+- <h1>Yes</h1> [SMOKER2]
+SMOKER2
+"Smokers are likely to be more vulnerable to COVID-19 as the act of smoking means that fingers (and possibly contaminated cigarettes) are in contact with lips which increases the possibility of transmission of virus from hand to mouth. Smokers may also already have lung disease or reduced lung capacity which would greatly increase risk of serious illness."
+- <h1>Continue</h1> [SICKNESS6]
+SMOKER
+"Smokers are likely to be more vulnerable to COVID-19 as the act of smoking means that fingers (and possibly contaminated cigarettes) are in contact with lips which increases the possibility of transmission of virus from hand to mouth. Smokers may also already have lung disease or reduced lung capacity which would greatly increase risk of serious illness."
+- <h1>Continue</h1> [SICKNESS4]
+NOTSMOKER
+"Not smoking may increase the chances as your lungs may be healthier"
+- <h1>Continue</h1> [SICKNESS3]
+NOTSMOKER2
+"Not smoking may increase the chances as your lungs may be healthier"
+- <h1>Continue</h1> [SICKNESS5]
+//SICKNESS3 woman who is not a smoker
+// SICKNESS4 woman who is a smoker
+// SICKNESS5 a man who is not a smoker
+// SICKNESS6 a man who is a smoker
+SICKNESS3
+"Good thing you do not smoke my dear, Do you have any of these sicknesses? Asthma, Diabetes, Cancer, Heart disease, kidney failure or pneumonia"
+- <h1>Yes</h1>[SICK1]
+-<h1>No</h1>[NOTSICK2]
+SICKNESS4
+"Do you have any of these sicknesses Dear? Asthma, Diabetes, Cancer, Heart disease or pneumonia"
+- <h1>Yes</h1>[SICK3]
+-<h1>No</h1>[NOTSICK2]
+SICKNESS5
+"congratulations on not smoking sir, Do you have any of these sicknesses? Asthma, Diabetes, Cancer, Heart disease or pneumonia"
+- <h1>Yes</h1>[SICK5]
+-<h1>No</h1>[NOTSICK6]
+SICKNESS6
+"Do you have any of these sicknesses sir? Asthma, Diabetes, Cancer, Heart disease or pneumonia"
+- <h1>Yes</h1>[SICK7]
+-<h1>No</h1>[NOTSICK8]
+//SICK1 woman, not smoking, sick
+//NOTSICK2 woman, not smoking, not sick
+//SICK3 woman, smoker, sick
+//NOTSICK4 woman, smoker, not sick
+//SICK5 male, not smoking, sick
+//NOTSICK6 male, not smoking, not sick
+//SICK7 male, smoking, sick
+//NOTSICK8 male, smoking, not sick
+SICK1
+"China indicated that people with illnesses including heart disease, diabetes and cancer had a 79 per cent greater chance of being admitted to intensive care, being put on a ventilator, or dying from coronavirus. It is advisable for you to stay home and take the necessary precautions"
+- <h1>Continue</h1>[AGE1]
+NOTSICK2
+"You stand a good chance not to get infected dear"
+- <h1>Continue</h1>[AGE2]
+SICK3
+"China indicated that people with illnesses including heart disease, diabetes and cancer had a 79 per cent greater chance of being admitted to intensive care, being put on a ventilator, or dying from coronavirus. It is advisable for you to stay home and take the necessary precautions"
+- <h1>Continue</h1>[AGE3]
+NOTSICK4
+"You stand a good chance not to get infected dear"
+- <h1>Continue</h1>[AGE4]
+SICK5
+"China indicated that people with illnesses including heart disease, diabetes and cancer had a 79 per cent greater chance of being admitted to intensive care, being put on a ventilator, or dying from coronavirus. It is advisable for you to stay home and take the necessary precautions"
+- <h1>Continue</h1>[AGE5]
+NOTSICK6
+"You stand a good chance not to get infected sir"
+- <h1>Continue</h1>[AGE6]
+NOTSICK7
+"You stand a good chance not to get infected sir"
+- <h1>Continue</h1>[AGE7]
+SICK8
+"China indicated that people with illnesses including heart disease, diabetes and cancer had a 79 per cent greater chance of being admitted to intensive care, being put on a ventilator, or dying from coronavirus. It is advisable for you to stay home and take the necessary precautions"
+- <h1>Continue</h1>[AGE8]
+
+AGE1
+"One last question, Are you older than Sixty?"
+- <h1>Yes</h1>[OLD1]
+-<h1>No</h1>[NOTOLD2]
+AGE2
+"One last question, Are you older than Sixty?"
+- <h1>Yes</h1>[OLD3]
+-<h1>No</h1>[NOTOLD4]
+AGE3
+"One last question, Are you older than Sixty?"
+- <h1>Yes</h1>[OLD5]
+-<h1>No</h1>[NOTOLD6]
+AGE4
+"One last question, Are you older than Sixty?"
+- <h1>Yes</h1>[OLD7]
+-<h1>No</h1>[NOTOLD8]
+AGE5
+"One last question, Are you older than Sixty?"
+- <h1>Yes</h1>[OLD9]
+-<h1>No</h1>[NOTOLD10]
+AGE6
+"One last question, Are you older than Sixty?"
+- <h1>Yes</h1>[OLD11]
+-<h1>No</h1>[NOTOLD12]
+AGE7
+"One last question, Are you older than Sixty?"
+- <h1>Yes</h1>[OLD13]
+-<h1>No</h1>[NOTOLD14]
+AGE8
+"One last question, Are you older than Sixty?"
+- <h1>Yes</h1>[OLD15]
+-<h1>No</h1>[NOTOLD16]
+//OLD1 woman, not smoking, sick, old
+//NOTOLD2 woman, not smoking, sick notold
+//OLD3 woman, not smoking, not sick, old 
+//NOTOLD4 woman, not smoking, not sick, notold
+//OLD5 woman, smoker, sick, old
+//NOTOLD6 woman, smoker, sick, notold
+//OLD7 woman, smoker, notsick, old
+//NOTOLD8 woman, smoker, notsick, notold
+//OLD9 male, not smoking, sick, old
+//NOTOLD10 male, not smoking, sick, notold
+//OLD11 male, not smoking, not sick, old
+//NOTOLD12 male, not smoking, not sick, notold
+//OLD13 male, smoker, sick, old
+//NOTOLD14 male, smoker, sick, notold
+//OLD15 male, smoker, notsick, old
+//NOTOLD16 male, smoker, notsick, notold
+
+OLD1
+"As I said to you before the chances of you to be infected are less compared to men, however since you have a chronic that puts you in danger even worse with the age, I would say your chances of being Infected are 85% based on my research. my advise is stay home and practice social distancing and avoid people with the coronavirus symptoms with all your might."
+- <h1>Continue</h1>[FINISH]
+NOTOLD2
+"Your advantage you have in this is the fact that your age is good, the challenge is your chronic so I would say your chance of being infected and hospitalised are 75%, stay home, practice social distancing and take all precautions."
+- <h1>Continue</h1>[FINISH]
+OLD3
+"With the chronic you have, smoking and your age compromises your immune system and your lungs functionality, you are a high risk, I would say your chances of getting the infection is 90% based on my research. my advise is stay home and practice social distancing and avoid people with the coronavirus symptoms with all your might."
+- <h1>Continue</h1>[FINISH]
+NOTOLD4
+"Congatulations your chances of getting the virus are one in hundred, you are at the bottom of the people who are at risk, however you need to take the precautions to remain safe"
+- <h1>Continue</h1>[FINISH]
+OLD5
+"The combination of you smoking plus your age puts you at high risk, I would say you have 80% chance of being sick and be admitted to hospital. stay home, practice social distancing and take all precautions."
+- <h1>Continue</h1>[FINISH]
+NOTOLD6
+"Being a woman puts you in a slight advantage however smoking increases your chance of being infected. I would say smoking puts you on a 50/50 chances of getting infected, but if you share your cigarrette you increase your risk of being infected."
+- <h1>Continue</h1>[FINISH]
+OLD7
+"Your age increases your risk by 75% plus smoking, I would say your chances of being infected is 83%. my advise is stay home and practice social distancing and avoid people with the coronavirus symptoms with all your might."
+- <h1>Continue</h1>[FINISH]
+NOTOLD8
+"Smoking is not good for your lungs, plus you continually touch your mouth when you smoke, your chances of getting infected is 42%, not a high risk"
+- <h1>Continue</h1>[FINISH]
+OLD9
+"being male automatically puts you at risk and since you have a chronic that puts you in danger even worse with the age, I would say your chances of being Infected are 89% based on my research. my advise is stay home and practice social distancing and avoid people with the coronavirus symptoms with all your might."
+- <h1>Continue</h1>[FINISH]
+NOTOLD10
+"Your advantage you have in this is the fact that your age is good, the challenge is your chronic so I would say your chance of being infected and hospitalised are 79%, stay home, practice social distancing and take all precautions."
+- <h1>Continue</h1>[FINISH]
+OLD11
+"With the chronic you have, smoking and your age compromises your immune system and your lungs functionality, you are a high risk, I would say your chances of getting the infection is 95% based on my research. my advise is stay home and practice social distancing and avoid people with the coronavirus symptoms with all your might."
+- <h1>Continue</h1>[FINISH]
+NOTOLD12
+"Your chances of getting the virus are two in hundred, you are at the bottom of the people who are at risk, however you need to take the precautions to remain safe"
+- <h1>Continue</h1>[FINISH]
+OLD13
+"The combination of you smoking plus your age puts you at high risk, I would say you have 80% chance of being sick and be admitted to hospital. stay home, practice social distancing and take all precautions."
+- <h1>Continue</h1>[FINISH]
+NOTOLD14
+"I would say smoking puts you on a 50/50 chances of getting infected, but if you share your cigarrette you increase your risk of being infected."
+- <h1>Continue</h1>[FINISH]
+OLD15
+"According to my research sir you are a high risk by 90%, men are likely to catch the virus more than women, this could be their social behaviour, like always shaking hands, not washing them, sharing cigarrettes etc, your age and the smoking thing makes you a high risk.my advise is stay home and practice social distancing and avoid people with the coronavirus symptoms with all your might." 
+- <h1>Continue</h1>[FINISH]
+NOTOLD16
+"Smoking is not good for your lungs, plus you continually touch your mouth when you smoke, your chances of getting infected is 42%, not a high risk"
+- <h1>Continue</h1>[FINISH]
+FINISH
+"Thank You! I know Its hard but try staying at home during this shut down"
+RISK
+// Minimal VN style example
+// made for educational purposes
+// Public domain images googled
+
+
+	
+
+	
+"Are you experiencing symptoms related to those of the Covid-19 or you suspect you may have been exposed to the virus?"
+
+
+- <h1>Am experiencing the symptoms</h1> [SYMPTOMS]
+- <h1>Been exposed</h1> [EXPOSED]
+
+EXPOSED
+"People may be sick with the virus for 1 to 14 days before developing symptoms. The most common symptoms of coronavirus disease (COVID-19) are fever, tiredness, and dry cough. Most people (about 80%) recover from the disease without needing special treatment. remember to take the precautions and remaining indoors."
+- <h1>Back</h1> [WELCOME]
+- <h1>Finish</h1> [FINISH]
+SYMPTOMS
+
+"Which of the following symptoms are you experiencing?"
+	
+- <h1> (a)Coughing</h1> [COUGHING]
+- <h1> (b)Fever</h1> [FEVER]
+- <h1> (c)Tiredness</h1> [TIREDNESS]
+- <h1> (d)Difficulty breathing</h1> [BREATHING]
+- <h1> a, b and c [NO]</h1>
+- <h1>All the above</h1> [NO]
+COUGHING
+"If you are experiencing a sudden continuous dry cough, you may be having the virus, you need to take precautions and remain indoors as at this stage there is no need for medical attention, however if you feel you need to be attended to, remember to call first to prepare your clinician for your case"
+FEVER
+"If you are experiencing fever,you may be having the virus, you need to take precautions and remain indoors as at this stage there is no need for medical attention, however if you feel you need to be attended to, remember to call first to prepare your clinician for your case" 
+TIREDNESS
+Please remain indoors and take precations, remember to eat healthy and you may also exercise.
+BREATHING
+"Do you have respiratory condition such as asthma, or something related?"
+
+- <h1> YES</h1> [YES]
+- <h1> NO</h1> [NO]
+
+YES
+"A person with such condition may be at risk in contructing the virus, your condition may be severe, you can call this number: 0800 029 999 to find out which steps to take."
+NO
+"You may have reach a critical stage please seek medical attention, please do not forget to state that you have symptoms of the virus in order to prepare the medical practitioner who will attend you."
+
+- <h1> Back </h1> [WELCOME]
+- <h1> Finish</h1> [FINISH]
+FINISH 	
+
+CONTINUATION
+	<h3>Hurry up, Time running out...</h3>
+"So did he tell you what was his plan?" 
+
+"No he said I will soon find out, peharps on the news, I will no longer answer any question without my lawyer, the state will pay" 
+
+- <h1>Allow the witness to call their lawyer.</h1> [THE LAWYER]
+- <h1>Move to the next witness</h1> [WITNESS2]
+
+THE LAWYER
+<h3>Unfortunately you have run out of time and the lawyer has discredited the methods you used on his client, you have reached a dead End!!!</h3>
+	                                                           <h3>Game Over!</h3>
+	<div class="fb-share-button" data-href="https://eleutheriamovement.github.io/Coldcases.github.io/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Feleutheriamovement.github.io%2FColdcases.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><h1>Share</h1></a></div>
+WITNESS2
+<h3>Detective your second witness says there was no body</h3>
+
+- <h1>Interview the second witness</h1> [WITNESS2TEST]
+- <h1>Go to the scene</h1> [PHONECALL]
+
+WITNESS2TEST
+	[Hlaudi.png]
+
+"Tell me about what you saw on the scene, what did you see there?"
+
+"I saw the Toyota crashed beyond recognition on the front, I could have saved him, I mean I am the world's greatest "
+
+"Did you see the body?"
+
+"No there was no body there, I took steps of leadership and ran to the scene to retrieve the body but found none, I mean am not an angel"
+
+"Is there anything atleast that you noticed, anything?"
+
+"Well I have no matric but it was strange that the officers who were attending to this, were not wearing gloves and there was no red tape. I would leave this case if I were you"
+
+"Is that a threat?"
+
+"No just saying"	
+                                                       
+- <h1>Go to the scene</h1> [PHONECALL]
+
+PHONECALL
+	<h3>Your phone is ringing...Blocked number</h3>
+[Ring.jpg] [ringtone.mp3]
+
+- <h1>Decline</h1> [DEATH]
+- <h1>Accept</h1> [THREAT]
+
+THREAT
+A disguised voice on the phone...
+[Ongoing.png] [beep.mp3]
+
+
+
+"Listen and listen carefully, you are on the way to sign your warrant of death... We know where you live and everything about you, quit while you are ahead"
+
+"Who am I talking to?" 
+
+"That is not important, what is important is that you drop the case immediately"
+
+         Call dropped...
+- <h1>Drop the case</h1> [DROP]
+- <h1>Ignore and continue</h1> [DEATH]
+- <a href="lowp.html"><h1>Stay low profile for a while</h1></a>
+- <h1>Call a press conference</h1> [PRESS]
+
+DEATH
+Daily News Report
+
+[Daily.png][accident.mp3]
+
+"Investigator Dies in a freaky accident towards O.R Tambo Airport."
+	              <h2>Game Over!</h2>
+	
+	
+- <div class="fb-share-button" data-href="https://eleutheriamovement.github.io/Coldcases.github.io/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Feleutheriamovement.github.io%2FColdcases.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><h1>Share</h1></a></div>
+
+
+DROP
+<h2>You played it safe, good for you, But the case is not solved...You could have done better...</h2>
+	 		<h2>Game Over!</h2>
+	
+- <div class="fb-share-button" data-href="https://eleutheriamovement.github.io/Coldcases.github.io/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Feleutheriamovement.github.io%2FColdcases.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><h1>Share</h1></a></div>
+LOW
+<h2>You are now on a low profile Mode...Do not miss the next episode...</h2>
+	
+PRESS
+	</h3> The journalists did not show up, you are not popular at this point</h3>
+- <h1>Continue to scene</h1> [DEATH]
+- <a href="lowp.html"><h1>Stay low profile</h1></a>
+- <h1>Drop the case</h1> [DROP]
+</textarea>
+<script src="CYOAwesome.js"></script>
+</body>
+</html>
